@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f8f8f8; }
+        .container { max-width: 800px; margin: 40px auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);}
+        .product-img { width: 100%; max-width: 350px; border-radius: 8px; }
+        .details { margin-left: 32px; flex: 1; }
+        .row { display: flex; flex-wrap: wrap; }
+        .title { font-size: 2em; margin-bottom: 12px; }
+        .price { color: #e53935; font-size: 1.5em; margin-bottom: 16px; }
+        .desc { color: #555; margin-bottom: 24px; }
+        .buy-btn { background: #1976d2; color: #fff; border: none; padding: 12px 32px; font-size: 1em; border-radius: 4px; cursor: pointer; }
+        .buy-btn:hover { background: #1565c0; }
+        @media (max-width: 600px) {
+            .row { flex-direction: column; }
+            .details { margin-left: 0; margin-top: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <img class="product-img" src="https://via.placeholder.com/350x350?text=商品图片" alt="商品图片">
+            <div class="details">
+                <div class="title">高性能云服务器</div>
+                <div class="price">￥299.00</div>
+                <div class="desc">
+                    这是一款高性能云服务器，适用于网站部署、数据分析和开发测试。支持多种操作系统，提供高速网络和稳定存储。
+                </div>
+                <button class="buy-btn">立即购买</button>
+            </div>
+        </div>
+        <hr style="margin:32px 0;">
+        <h3>商品参数</h3>
+        <ul>
+            <li>CPU：4核8线程</li>
+            <li>内存：16GB DDR4</li>
+            <li>存储：500GB SSD</li>
+            <li>带宽：100Mbps</li>
+            <li>操作系统：Linux/Windows 可选</li>
+        </ul>
+    </div>
+</body>
+</html>

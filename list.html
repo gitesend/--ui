@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>商城商品列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; }
+        .container { max-width: 1200px; margin: 40px auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);}
+        h1 { text-align: center; margin-bottom: 32px; }
+        .product-list { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
+        .product-card {
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            width: 220px;
+            padding: 16px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .product-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08);}
+        .product-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+        .product-title { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
+        .product-price { color: #e91e63; font-size: 16px; margin-bottom: 12px; }
+        .buy-btn {
+            background: #2196f3;
+            color: #fff;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background 0.2s;
+        }
+        .buy-btn:hover { background: #1769aa; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>商城商品列表</h1>
+        <div class="product-list">
+            <div class="product-card">
+                <img class="product-img" src="https://via.placeholder.com/160x160?text=商品1" alt="商品1">
+                <div class="product-title">智能手机</div>
+                <div class="product-price">￥2999.00</div>
+                <button class="buy-btn">立即购买</button>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://via.placeholder.com/160x160?text=商品2" alt="商品2">
+                <div class="product-title">蓝牙耳机</div>
+                <div class="product-price">￥399.00</div>
+                <button class="buy-btn">立即购买</button>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://via.placeholder.com/160x160?text=商品3" alt="商品3">
+                <div class="product-title">智能手表</div>
+                <div class="product-price">￥899.00</div>
+                <button class="buy-btn">立即购买</button>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://via.placeholder.com/160x160?text=商品4" alt="商品4">
+                <div class="product-title">笔记本电脑</div>
+                <div class="product-price">￥4999.00</div>
+                <button class="buy-btn">立即购买</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
